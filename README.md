@@ -63,7 +63,8 @@ Run npm install after forking the code.
  ## Questions 
  Made by John Pacini
 
- https://github.com/Johnpac15
+ Github-https://github.com/Johnpac15
+ Deployed website-https://protected-meadow-37903.herokuapp.com
  Johnpac15@yahoo.com
  
  <img width="730" alt="Screen Shot 2022-03-15 at 12 29 58 AM" src="https://user-images.githubusercontent.com/88564390/158313601-148a7c61-8834-4a3b-a030-82c6fb29ba75.png">
