@@ -1,4 +1,4 @@
-// const U = require('../public/index.html')
+
 const APP_PREFIX = "BankRoll-";
 const VERSION = "version_01";
 const CACHE_NAME = APP_PREFIX + VERSION;
@@ -24,9 +24,6 @@ self.addEventListener("fetch", function (e) {
         console.log("file is not cached, fetching : " + e.request.url);
         return fetch(e.request);
       }
-
-      // You can omit if/else for console.log & put one line below like this too.
-      // return request || fetch(e.request)
     })
   );
 });
@@ -50,8 +47,6 @@ self.addEventListener("install", function (e) {
 self.addEventListener("activate", function (e) {
   e.waitUntil(
     caches.keys().then(function (keyList) {
-      // `keyList` contains all cache names under your username.github.io
-      // filter out ones that has this app prefix to create keeplist
       let cacheKeeplist = keyList.filter(function (key) {
         return key.indexOf(APP_PREFIX);
       });
